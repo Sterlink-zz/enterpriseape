@@ -18,7 +18,7 @@
       <tr>
         <td><%= invoice.date %></td>
         <td><%= invoice.company %></td>
-        <td><%= invoice.tax %></td>
+        <td><%=  "%5.1f" % invoice.tax %></td>
         <td><%= invoice.salesperson %></td>
         <td><%= link_to 'Show', invoice %></td>
         <td><%= link_to 'Edit', edit_invoice_path(invoice) %></td>
